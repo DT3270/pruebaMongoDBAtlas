@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <p>Prueba Mongo DB</p>
+
+    <input type="text" id="usr" name="usr" required
+    minlength="4" maxlength="8" size="10">
+    
+    <input type="password" id="psw" name="psw" required
+    minlength="4" maxlength="8" size="10">
+    
+    <button id="okButton">OK</button>
+    
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    <script type="text/javascript">
+      function appendPre(message) {
+        var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
